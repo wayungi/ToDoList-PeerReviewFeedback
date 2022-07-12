@@ -1,3 +1,4 @@
 node_modules/
 aside.js
 dist/
+.vscode/
