@@ -7,6 +7,7 @@ import {
   updateTask,
   updateLocalStorage,
   clearCompleted,
+  clearArray,
 } from './modules/methods.js';
 import { addActivity } from './modules/ui.js';
 import {
