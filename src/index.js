@@ -77,3 +77,10 @@ clearAllCompleted.addEventListener('click', () => {
   todoList.innerHTML = '';
   getTasks().forEach((task) => addActivity(todoList, task));
 });
+
+// remove all elements from array and clear interafce
+refresh.addEventListener('click', () => {
+  clearArray();
+  todoList.innerHTML = '';
+  updateLocalStorage();
+});
