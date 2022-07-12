@@ -14,21 +14,9 @@ const createCheckBox = (checkboxState) => {
 };
 
 const createIcon = () => {
-  const groupDiv = document.createElement('div');
-  const ellipsis = document.createElement('i');
-  ellipsis.classList.add('fa-solid', 'fa-ellipsis-vertical');
-  ellipsis.addEventListener('click', (e) => {
-    e.target.classList.add('hidden');
-    e.target.nextElementSibling.classList.remove('hidden');
-  });
   const trash = document.createElement('i');
   trash.classList.add('fa-solid', 'fa-trash');
-  trash.classList.add('hidden');
-
-  groupDiv.append(ellipsis);
-  groupDiv.appendChild(trash);
-
-  return groupDiv;
+  return trash;
 };
 
 const addActivity = (TodoListElement, task) => {
